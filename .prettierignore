@@ -1,0 +1,5 @@
+dist
+.pretterignore
+.prettierrc.json
+package-lock.json
+package.json
