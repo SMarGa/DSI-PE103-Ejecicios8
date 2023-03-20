@@ -11,7 +11,7 @@ export class MergeSort implements Strategy {
    * @param data Array desordenado
    * @returns Array ordenado
    */
-  merge_sort(data: number[]) {
+  private merge_sort(data: number[]) {
     const halfLength = Math.ceil(data.length / 2);
     let left = data.slice(0, halfLength);
     let right = data.slice(halfLength);
@@ -30,7 +30,7 @@ export class MergeSort implements Strategy {
    * @param right Parte izquierda
    * @returns Array conjunto ordenado
    */
-  merge(left: number[], right: number[]) {
+  private merge(left: number[], right: number[]) {
     let indexLow = 0;
     let indexHigh = 0;
     const lengthLow = left.length;

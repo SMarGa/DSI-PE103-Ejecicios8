@@ -6,7 +6,7 @@
   "scripts": {
     "start": "tsc-watch --onSuccess \"node dist/Solver.js\"",
     "doc": "typedoc",
-    "test": "nyc mocha && rm -rf .nyc_output",
+    "test": "nyc mocha",
     "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls && rm -rf .nyc_output"
   },
   "repository": {
