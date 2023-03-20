@@ -21,7 +21,6 @@ export class BubbleSort implements Strategy {
           data[i - 1] = data[i];
           data[i] = aux_num;
           swaped = true;
-          console.log("Cambio");
         }
       }
     }

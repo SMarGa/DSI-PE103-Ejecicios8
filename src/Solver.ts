@@ -11,6 +11,10 @@ export class Solver {
     this.strategy = strategy;
   }
 
+  setData(data2: number[]) {
+    this.data = data2;
+  }
+
   logic() {
     return this.strategy.execute(this.data);
   }
